@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <style>
+        .container {
+            height: 100vh;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+<form name="getlink" method="get">
+    <div class="container">
+        <div class="center">
+            <p><b>Enter Hungarian forints:</b><br>
+                <input id="linkText" type="text" size="40">
+            </p>
+            <p><b id="result">There will be a result :)</b><br>
+            </p>
+            <p><input type="button" value="Отправить" onclick="httpGet()"></p>
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>
